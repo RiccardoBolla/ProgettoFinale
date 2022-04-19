@@ -1,5 +1,5 @@
 import 'bootstrap/dist/js/bootstrap';
-
+import { Routes, Route, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import PostsList from './components/posts-list/PostsList';
@@ -10,7 +10,10 @@ function App() {
       <header className="App-header" >
         
       </header>
-      <PostsList />
+      <Routes>
+        <Route path="/" element={<PostsList />} />
+      </Routes>
+      
     </div>
   );
 }
