@@ -19,7 +19,7 @@ export default class PostsList extends React.Component {
         const rows = this.state.posts.map(post => <PostsListRow key={post.id} post={post} />)
         return (
             <>
-            <table>
+            <table className="table">
                 <thead>
                     <tr>
                         <th>Id</th>
