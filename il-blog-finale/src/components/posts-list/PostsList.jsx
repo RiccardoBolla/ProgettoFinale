@@ -18,21 +18,9 @@ export default class PostsList extends React.Component {
     render() {
         const rows = this.state.posts.map(post => <PostsListRow key={post.id} post={post} />)
         return (
-            <>
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Date</th>
-                        <th>Title</th>
-                        <th>Content</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {rows}
-                </tbody>
-            </table>
-            </>
+            <div className="container mt-4">
+                {rows}
+            </div>
         )
     }
 }

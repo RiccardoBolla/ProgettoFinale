@@ -6,4 +6,4 @@ export const getPosts = () => {
     .then(posts => posts.map(post => postObjToModel(post)));
 };
 
-export const postObjToModel = post => new Post(post.id, post.date, post.title.rendered, post.content.rendered); 
+export const postObjToModel = post => new Post(post.id, post.date, post.title.rendered, post.content.rendered, post.format.image); 

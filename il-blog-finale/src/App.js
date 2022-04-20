@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import PostsList from './components/posts-list/PostsList';
 import Navbar from './components/navbar/Navbar';
+import Page from './components/page/Page';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<PostsList />} />
+        <Route path="/:slug" element={<Page />} />
       </Routes>
       
     </div>
